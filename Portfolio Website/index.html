@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Adrian's Portfolio. " />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    <!-- Add to your <head> -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+<!-- Add before closing </body> -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <title>Portfolio | Adrian Olit</title>
+<meta name="description" content="Portfolio of Adrian Olit, BSIT Student and Aspiring Web Developer" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+</head>
+<body oncontextmenu="return false">
+
+<!-- pre loader -->
+<!-- <div class="loader-container">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+</div> -->
+
+<!-- navbar starts -->
+<header>
+        <a href="#home" class="logo"></a>
+
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+        <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>  <!-- Add this line -->
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+        </nav>
+</header>
+<!-- navbar ends -->
+
+
+<!-- hero section starts -->
+<section class="home" id="home">
+
+    <div class="content">
+    <h2>Hi There,<br/> I'm Adrian <span>Olit</span></h2>
+    <p>I am  <span class="typing-text"></span></p>
+    <a href="#about" class="btn"><span>About Me</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </a>
+    <div class="socials">
+    <ul class="social-icons">
+        <li><a class="facebook" aria-label="Facebook" href="https://www.facebook.com/share/16ZWdg6Y68/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/its.yourboyadi?igsh=MXExMjltNHoxcTY2OQ==" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a class="github" aria-label="GitHub" href="https://github.com/Dwight-prog" target="_blank"><i class="fab fa-github"></i></a></li>
+
+    </ul>
+    </div>
+    </div>
+<div class="image">
+    <img draggable="false" class="tilt" src="./assets/images/adrian-hero.jpg" alt="Adrian Olit - BSIT Student and Aspiring Web Developer">
+</div>
+</section>
+<!-- hero section ends -->
+
+
+<!-- about section starts -->
+<section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    
+    <div class="row">
+
+<div class="image">
+    <img draggable="false" class="tilt" src="./assets/images/adrian-about.jpg" alt="Adrian Olit - About Me">
+</div>
+    <div class="content">
+        <h3>I'm Adrian</h3>
+        <span class="tag">2nd Year</span>
+        
+        <p>I am a BSIT Student in Camarines Norte State College </p>
+        <p>I am a learner and a second-year level coding student who enjoys developing new skills and applying them in practical ways. I take pride in my ability to adapt, stay focused, and approach challenges with a positive mindset.
+I value creativity, consistency, and clear communication, and I enjoy working on projects that allow me to turn ideas into real outcomes. Whether working on my own or as part of a team, I aim to deliver my best work and continue developing both personally and professionally.</p>
+        <div class="box-container">
+            <!-- <div class="box">
+              <p><span> age: </span> 20</p>
+              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+            </div> -->
+            <div class="box">
+              <p><span> email : </span> olitadrian44@gmail.com</p>
+              <p><span> place : </span> P2, Bagumbayan, Paracale, Camarines Nortex</p>
+            </div>
+        </div>
+        
+        <div class="resumebtn">
+            <a href="assets/docs/adrian-olit-resume.pdf" target="_blank" class="btn"><span>Resume</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+    </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+<!-- skills section starts -->
+<section class="skills" id="skills">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+    <div class="container">
+        <!-- 1. PROGRAMMING SKILLS (Bar Style) -->
+        <h3 class="skill-category"><i class="fas fa-code"></i> Programming Skills</h3>
+        <div class="row" id="skillsContainer">
+            <!-- HTML Skill -->
+            <div class="bar">
+              <div class="info">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+            </div>
+            
+            <!-- CSS Skill -->
+            <div class="bar">
+              <div class="info">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+            </div>
+            
+            <!-- JavaScript Skill -->
+            <div class="bar">
+              <div class="info">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+            </div>
+            
+            <!-- PHP Skill -->
+            <div class="bar">
+              <div class="info">
+                <i class="fab fa-php"></i>
+                <span>PHP</span>
+              </div>
+            </div>
+            
+            <!-- Java Skill -->
+            <div class="bar">
+              <div class="info">
+                <i class="fab fa-java"></i>
+                <span>Java</span>
+              </div>
+            </div>
+
+            <!-- MySQL Skill -->
+            <div class="bar">
+              <div class="info">
+                <i class="fas fa-database"></i>
+                <span>MySQL</span>
+              </div>
+            </div>
+        </div>
+
+<!-- 2. SOFT SKILLS (Graph Style with Percentages) -->
+<h3 class="skill-category"><i class="fas fa-chart-line"></i> Soft Skills</h3>
+
+<div class="soft-skills-container">
+    <!-- Communication -->
+    <div class="soft-skill">
+        <div class="soft-skill-info">
+            <i class="fas fa-comments"></i>
+            <span>Communication</span>
+            <span class="skill-percentage">90%</span>
+        </div>
+        <div class="soft-progress-bar">
+            <div class="soft-progress" style="width: 90%"></div>
+        </div>
+    </div>
+
+    <!-- Team Collaboration -->
+    <div class="soft-skill">
+        <div class="soft-skill-info">
+            <i class="fas fa-handshake"></i>
+            <span>Team Collaboration</span>
+            <span class="skill-percentage">85%</span>
+        </div>
+        <div class="soft-progress-bar">
+            <div class="soft-progress" style="width: 85%"></div>
+        </div>
+    </div>
+
+    <!-- Problem Solving -->
+    <div class="soft-skill">
+        <div class="soft-skill-info">
+            <i class="fas fa-puzzle-piece"></i>
+            <span>Problem Solving</span>
+            <span class="skill-percentage">95%</span>
+        </div>
+        <div class="soft-progress-bar">
+            <div class="soft-progress" style="width: 95%"></div>
+        </div>
+    </div>
+
+    <!-- Time Management -->
+    <div class="soft-skill">
+        <div class="soft-skill-info">
+            <i class="fas fa-clock"></i>
+            <span>Time Management</span>
+            <span class="skill-percentage">85%</span>
+        </div>
+        <div class="soft-progress-bar">
+            <div class="soft-progress" style="width: 85%"></div>
+        </div>
+    </div>
+
+    <!-- Adaptability -->
+    <div class="soft-skill">
+        <div class="soft-skill-info">
+            <i class="fas fa-sync-alt"></i>
+            <span>Adaptability</span>
+            <span class="skill-percentage">90%</span>
+        </div>
+        <div class="soft-progress-bar">
+            <div class="soft-progress" style="width: 90%"></div>
+        </div>
+    </div>
+
+    <!-- Critical Thinking -->
+    <div class="soft-skill">
+        <div class="soft-skill-info">
+            <i class="fas fa-brain"></i>
+            <span>Critical Thinking</span>
+            <span class="skill-percentage">85%</span>
+        </div>
+        <div class="soft-progress-bar">
+            <div class="soft-progress" style="width: 85%"></div>
+        </div>
+    </div>
+
+    <!-- Leadership -->
+    <div class="soft-skill">
+        <div class="soft-skill-info">
+            <i class="fas fa-crown"></i>
+            <span>Leadership</span>
+            <span class="skill-percentage">75%</span>
+        </div>
+        <div class="soft-progress-bar">
+            <div class="soft-progress" style="width: 75%"></div>
+        </div>
+    </div>
+
+    <!-- Attention to Detail -->
+    <div class="soft-skill">
+        <div class="soft-skill-info">
+            <i class="fas fa-search"></i>
+            <span>Attention to Detail</span>
+            <span class="skill-percentage">95%</span>
+        </div>
+        <div class="soft-progress-bar">
+            <div class="soft-progress" style="width: 95%"></div>
+        </div>
+    </div>
+</div>
+
+        <!-- 3. OTHER ABILITIES (Bar Style) -->
+        <h3 class="skill-category"><i class="fas fa-cog"></i> Other Abilities</h3>
+        <div class="row">
+            <!-- Networking Skill -->
+            <div class="bar">
+              <div class="info">
+                <i class="fas fa-network-wired"></i>
+                <span>Networking</span>
+              </div>
+            </div>
+            
+            <!-- Troubleshooting Skill -->
+            <div class="bar">
+              <div class="info">
+                <i class="fas fa-tools"></i>
+                <span>Troubleshooting</span>
+              </div>
+            </div>
+            
+            <!-- Computer Repair Skill -->
+            <div class="bar">
+              <div class="info">
+                <i class="fas fa-desktop"></i>
+                <span>Computer Repair</span>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- skills section ends -->
+
+<!-- projects section starts -->
+<!-- projects section starts -->
+<section class="work" id="work">
+    <div class="projects-header">
+        <i class="fas fa-laptop-code"></i>
+        <h2 class="heading">Projects <span>Made</span></h2>
+        <span class="projects-badge">6 Projects</span>
+    </div>
+    
+    <div class="projects-grid">
+        <!-- Project 1: Crazy Kusina Game -->
+        <div class="project-card">
+            <div class="project-img">
+                <img draggable="false" src="./assets/images/projects/crazy-kusina.jpg" alt="Crazy Kusina Game">
+                <div class="project-overlay">
+                    <span class="project-category">Java Game</span>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>Crazy Kusina Game</h3>
+                <p>Java DSA game with cooking-themed algorithmic challenges and menu navigation.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">DSA</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link request-code" data-project="Crazy Kusina Game">
+                        <i class="fas fa-code"></i> Request Code
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Project 2: CNSC Map System -->
+        <div class="project-card">
+            <div class="project-img">
+                <img draggable="false" src="./assets/images/projects/cnsc-map.jpg" alt="CNSC Map System">
+                <div class="project-overlay">
+                    <span class="project-category">Navigation System</span>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>CNSC Map System</h3>
+                <p>ASCII-based campus navigation system for Camarines Norte State College.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">ASCII</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link request-code" data-project="CNSC Map System">
+                        <i class="fas fa-code"></i> Request Code
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Project 3: EduMath Learning App -->
+        <div class="project-card">
+            <div class="project-img">
+                <img draggable="false" src="./assets/images/projects/edumath.jpg" alt="EduMath App">
+                <div class="project-overlay">
+                    <span class="project-category">Educational App</span>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>EduMath Learning App</h3>
+                <p>Grade 3 math app with lessons, PDFs, and unlockable quiz-based progression.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Mobile</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link request-code" data-project="EduMath Learning App">
+                        <i class="fas fa-code"></i> Request Code
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Project 4: Earl's Food & Whatnot -->
+        <div class="project-card">
+            <div class="project-img">
+                <img draggable="false" src="./assets/images/projects/earls-food.jpg" alt="Earl's Food Website">
+                <div class="project-overlay">
+                    <span class="project-category">Web Application</span>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>Earl's Food & Whatnot</h3>
+                <p>Online food ordering platform for local business with cart and order management.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML/CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">PHP</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link request-code" data-project="Earl's Food Website">
+                        <i class="fas fa-code"></i> Request Code
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Project 5: Personal Portfolio Website -->
+        <div class="project-card">
+            <div class="project-img">
+                <img draggable="false" src="./assets/images/projects/portfolio.jpg" alt="Personal Portfolio Website">
+                <div class="project-overlay">
+                    <span class="project-category">Web Design</span>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>Personal Portfolio Website</h3>
+                <p>Responsive portfolio website showcasing my skills, projects, and experience as an IT student.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link request-code" data-project="Personal Portfolio Website">
+                        <i class="fas fa-code"></i> Request Code
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Project 6: Library Management System -->
+        <div class="project-card">
+            <div class="project-img">
+                <img draggable="false" src="./assets/images/projects/LibraryManagement.png" alt="Library Management System">
+                <div class="project-overlay">
+                    <span class="project-category">Basic System</span>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>Library Management System</h3>
+                <p>Complete library system with book borrowing, member management, fine calculation, and business day reminders.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link request-code" data-project="Library Management System">
+                        <i class="fas fa-code"></i> Request Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- View All Projects Button -->
+    <div class="projects-footer">
+        <button id="fetchGithubProjects" class="github-profile-btn">
+            <i class="fab fa-github"></i> View All Projects on GitHub
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+</section>
+<!-- projects section ends -->
+
+ <!-- Container for GitHub repos (initially hidden) -->
+<div id="githubProjectsContainer" style="display: none; margin-top: 4rem;">
+    <div class="github-section-header">
+        <i class="fab fa-github"></i>
+        <h3>My GitHub Repositories</h3>
+        <span class="github-badge" id="repoCount">0 Projects</span>
+    </div>
+    
+    <div class="github-grid" id="githubReposList"></div>
+    
+    <div class="github-footer">
+        <a href="https://github.com/Dwight-prog" target="_blank" class="github-profile-btn">
+            <i class="fab fa-github"></i> View Full GitHub Profile
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</div>
+
+<!-- education section starts -->
+<section class="education" id="education">
+    <div class="education-header">
+        <i class="fas fa-graduation-cap"></i>
+        <h2 class="heading">My <span>Education</span></h2>
+        <span class="education-badge">5 Schools</span>
+    </div>
+    
+    <p class="education-quote">
+        <i class="fas fa-quote-left"></i>
+        Education is not the learning of facts, but the training of the mind to think. - Albert Einstein
+        <i class="fas fa-quote-right"></i>
+    </p>
+    
+    <div class="education-timeline">
+        <!-- Tertiary Education -->
+        <div class="education-item left">
+            <div class="education-image">
+                <img src="./assets/images/educat/cnsc.jpg" alt="Camarines Norte State College">
+                <div class="image-overlay">
+                    <span>CNSC</span>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="education-year-badge">2023 - Present</div>
+                <div class="education-card-header">
+                    <div class="school-info">
+                        <h3>Camarines Norte State College</h3>
+                        <h4>Bachelor of Science in Information Technology</h4>
+                    </div>
+                    <span class="education-status current">Currently Enrolled</span>
+                </div>
+                <div class="education-card-body">
+                    <div class="education-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Daet, Camarines Norte</span>
+                    </div>
+                    <div class="education-detail">
+                        <i class="fas fa-clock"></i>
+                        <span>2nd Year • Ongoing</span>
+                    </div>
+                    <div class="education-detail">
+                        <i class="fas fa-user-graduate"></i>
+                        <span>2023 - Present</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Senior High School -->
+        <div class="education-item right">
+            <div class="education-card">
+                <div class="education-year-badge">2022 - 2024</div>
+                <div class="education-card-header">
+                    <div class="school-info">
+                        <h3>Paracale National High School</h3>
+                        <h4>Senior High School • TVL-ICT Strand</h4>
+                    </div>
+                    <span class="education-status completed">Graduated</span>
+                </div>
+                <div class="education-card-body">
+                    <div class="education-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Brgy. Bagumbayan, Paracale, Camarines Norte</span>
+                    </div>
+                    <div class="education-detail">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Technical Vocational Livelihood • ICT Strand</span>
+                    </div>
+                    <div class="education-detail">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Class of 2024</span>
+                    </div>
+                </div>
+            </div>
+            <div class="education-image">
+                <img src="./assets/images/educat/paracale-hs.jpg" alt="Paracale National High School">
+                <div class="image-overlay">
+                    <span>PNHS</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Junior High School - Paracale -->
+        <div class="education-item left">
+            <div class="education-image">
+                <img src="./assets/images/educat/paracale-hs.jpg" alt="Paracale National High School">
+                <div class="image-overlay">
+                    <span>PNHS - JHS</span>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="education-year-badge">2019 - 2021</div>
+                <div class="education-card-header">
+                    <div class="school-info">
+                        <h3>Paracale National High School</h3>
+                        <h4>Junior High School</h4>
+                    </div>
+                    <span class="education-status completed">Completed</span>
+                </div>
+                <div class="education-card-body">
+                    <div class="education-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Brgy. Bagumbayan, Paracale, Camarines Norte</span>
+                    </div>
+                    <div class="education-detail">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Grades 7-10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Junior High School - Saint John -->
+        <div class="education-item right">
+            <div class="education-card">
+                <div class="education-year-badge">2018 - 2019</div>
+                <div class="education-card-header">
+                    <div class="school-info">
+                        <h3>Saint John The Apostle Academy</h3>
+                        <h4>Junior High School</h4>
+                    </div>
+                    <span class="education-status completed">Completed</span>
+                </div>
+                <div class="education-card-body">
+                    <div class="education-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Brgy. Bulhao, Labo, Camarines Norte</span>
+                    </div>
+                    <div class="education-detail">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Grade 7</span>
+                    </div>
+                </div>
+            </div>
+            <div class="education-image">
+                <img src="./assets/images/educat/saint-john.jpg" alt="Saint John The Apostle Academy">
+                <div class="image-overlay">
+                    <span>SJAA</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Elementary School -->
+        <div class="education-item left">
+            <div class="education-image">
+                <img src="./assets/images/educat/labo-elementary.jpg" alt="Labo Elementary School">
+                <div class="image-overlay">
+                    <span>LES</span>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="education-year-badge">2012 - 2018</div>
+                <div class="education-card-header">
+                    <div class="school-info">
+                        <h3>Labo Elementary School</h3>
+                        <h4>Primary Education</h4>
+                    </div>
+                    <span class="education-status completed">Graduated</span>
+                </div>
+                <div class="education-card-body">
+                    <div class="education-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Brgy. San Francisco, Labo, Camarines Norte</span>
+                    </div>
+                    <div class="education-detail">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Grades 1-6</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- education section ends -->
+
+<!-- experience section starts -->
+<section class="experience" id="experience">
+    <h2 class="heading"><i class="fas fa-briefcase"></i> Work <span>Experience</span></h2>
+    
+    <div class="timeline">
+        <div class="container right">
+            <div class="content">
+                <div class="tag">
+                    <h2>Meriam's Pisonet Computer Shop</h2>
+                </div>
+                <div class="desc">
+                    <h3>Network Technician & IT Support</h3>
+                    <p>2022 - Present</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container left">
+            <div class="content">
+                <div class="tag">
+                    <h2>PC-Micron Enterprise</h2>
+                </div>
+                <div class="desc">
+                    <h3>Network Trouble Shooter</h3>
+                    <p>2021 - 2022</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</section>
+<!-- experience section ends -->
+
+<!-- contact section starts -->
+<section class="contact" id="contact">
+  
+  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="./assets/images/contact1.png" alt="Contact Me">
+      </div>
+      
+      <!-- Contact Form -->
+      <form id="contact-form">
+        <h3><i class="fas fa-paper-plane"></i> Send Me a Message</h3>
+        
+        <div class="form-group">
+          <div class="field">
+            <input type="text" name="from_name" placeholder="Your Name" required>
+            <i class='fas fa-user'></i>
+          </div>
+          
+          <div class="field">
+            <input type="email" name="from_email" placeholder="Your Email" required>
+            <i class='fas fa-envelope'></i>
+          </div>
+          
+          <div class="field">
+            <input type="tel" name="phone" placeholder="Phone Number (Optional)">
+            <i class='fas fa-phone-alt'></i>
+          </div>
+          
+          <div class="message">
+            <textarea placeholder="Your Message" name="message" required></textarea>
+            <i class="fas fa-comment-dots"></i>
+          </div>
+          
+          <div class="button-area">
+            <button type="submit">
+              Send Message <i class="fa fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- contact section ends -->
+
+<!-- Feedback Section -->
+<section class="feedback" id="feedback">
+    <div class="feedback-header">
+        <i class="fas fa-comment-dots"></i>
+        <h2 class="heading">Leave a <span>Feedback</span></h2>
+        <span class="feedback-badge" id="feedbackCount">0</span>
+    </div>
+    
+    <p class="feedback-subtitle">Your thoughts help me improve ✨</p>
+    
+    <div class="feedback-container">
+        <div class="feedback-form">
+            <h3><i class="fas fa-pen"></i> Share Your Thoughts</h3>
+            
+            <div class="form-group">
+                <input type="text" id="feedbackName" placeholder="Your name" class="feedback-input">
+            </div>
+            
+            <div class="form-group">
+                <textarea id="feedbackMessage" rows="4" placeholder="Write your feedback here..." class="feedback-input"></textarea>
+            </div>
+            
+            <button onclick="submitFeedback()" class="feedback-submit">
+                <i class="fas fa-paper-plane"></i> Submit Feedback
+            </button>
+        </div>
+        
+        <div class="recent-feedback">
+            <h3><i class="fas fa-history"></i> Recent Feedback</h3>
+            <div id="feedbackList" class="feedback-list">
+                <!-- Feedback items will appear here -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<div class="map-wrapper">
+    <h3 class="skill-category"><i class="fas fa-map-marked-alt"></i> My Location</h3>
+    <div id="portfolioMap" style="height: 400px; width: 100%; border-radius: 1.5rem; z-index: 1;"></div>
+    <p class="map-credit"><i class="fas fa-heart" style="color: #ff6b6b;"></i> OpenStreetMap - Free & Open</p>
+</div>
+
+<!-- footer section starts -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Adrian's Portfolio</h3>
+          <p>Thank you for visiting my personal portfolio website.<br/> <br/> It's always about getting better🚀. </p>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="#projects"><i class="fas fa-chevron-circle-right"></i> projects</a>
+          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+63 9310440647</p>
+          <p> <i class="fas fa-envelope"></i>olitadrian44@gmail.com</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Paracale, Camarines Norte</p>
+          <div class="share">
+    <a href="https://www.facebook.com/share/16ZWdg6Y68/" class="fab fa-facebook" aria-label="Facebook" target="_blank"></a>
+    <a href="https://www.instagram.com/its.yourboyadi?igsh=MXExMjltNHoxcTY2OQ==" class="fab fa-instagram" aria-label="Instagram" target="_blank"></a>
+    <a href="https://www.github.com/Dwight-prog" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+
+</div>
+      </div>
+  </div>
+
+</section>
+<!-- footer section ends -->
+
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- typed.js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- vanilla tilt.js links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- scroll reveal anim -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+<script src="./assets/js/script.js"></script>   
+
+</body>
+</html>
